@@ -1,0 +1,12 @@
+{
+  "name": "luoying-theme-park",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/park-app.js --bundle --format=iife --platform=browser --target=es2020 --alias:three=./vendor/three/build/three.module.js --outfile=park-app.bundle.js --minify",
+    "preview": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.9"
+  }
+}
